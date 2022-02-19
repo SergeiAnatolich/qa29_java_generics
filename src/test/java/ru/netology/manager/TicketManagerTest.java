@@ -38,7 +38,7 @@ class TicketManagerTest {
 
     @Test
     void shouldFindAllWithAirports() {
-        Ticket[] expected = new Ticket[]{ticket1, ticket5};
+        Ticket[] expected = new Ticket[]{ticket5, ticket1};
         Ticket[] actual = manager.findAllWithAirports("SVO", "KZN");
 
         assertArrayEquals(expected, actual);
